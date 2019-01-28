@@ -1,0 +1,134 @@
+/* Resize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    color: #000;
+}
+
+/* Class settings resize */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Buttons settings */
+.btn {
+    padding: 10px 30px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1em;
+    border: 1px solid #000;
+}
+.btn:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+/* header */
+#header {
+    text-align: center;
+    padding: 30px 5px;
+}
+
+/* taskList */
+#area-input-btn {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* Input and button */
+.input-style {
+    padding: 10px 5px;
+    margin: 10px 5px;
+    color: #7a7a7a;
+    font-size: 1em;
+    width: 70%;
+}
+.input-error {
+    border: 1px solid #f00000;
+    border-radius: 5px;
+}
+.input-ok {
+    border: 1px solid #32cd32;
+    border-radius: 5px;
+}
+#btn-add-task {
+    background-color: #32cd32;
+}
+#btn-add-task:hover {
+    background-color: #228b22;
+}
+
+/* Area tasks */
+#area-tasks {
+    margin: 20px 0;
+    padding: 10px 5px;
+    position: relative;
+}
+#area-tasks h2 {
+    padding: 0 5px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li {
+    margin: 10px 5px;
+    background-color: #00bfff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+    box-shadow: 3px 3px 5px #000;
+    position: relative;
+    width: 70%;
+    transition: all .5s ease;
+}
+ul li:hover {
+    cursor: pointer;
+    background: #ff4a4a;
+}
+
+/* Media Queries */
+@media (max-width: 767px){
+    /* Textos */
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    /* Input and button */
+    .input-style {
+        width: 100%;
+    }
+    .btn {
+        padding: 10px 15px;
+        width: 100%;
+    }
+    /* Area tasks */
+    ul li {
+        width: 100%;
+    }
+}
